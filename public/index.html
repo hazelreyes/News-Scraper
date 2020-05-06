@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Scraping Comics</title>
+    <title>Scraping News Articles</title>
     <style>
       body { background-color: #F2F6D0 }
       #wrapper {
@@ -11,13 +11,13 @@
         margin-right: auto;
         padding-top: 5%;
       }
-      #comics {
+      #articles {
         display: inline-block;
         overflow: auto;
         width: 60%;
         height: 700px;
       }
-      #comments {
+      #notes {
         float: right;
         width: 30%;
       }
@@ -39,9 +39,9 @@
   <body>
     <div id="wrapper">
       <h1>Comic Scraper</h1>
-      <h2><i>Super Silly Comics.</i></h2>
-      <div id="comics"></div>
-      <div id="comments"></div>
+      <h2><i>BBC News Articles.</i></h2>
+      <div id="articles"></div>
+      <div id="notes"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
