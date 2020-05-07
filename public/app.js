@@ -1,7 +1,7 @@
 
 $.ajax({
   method: "GET",
-  url: "/scrape/",
+  url: "/scrape",
 })
   // With that done, add the note information to the page
   .then(function (data) {
@@ -21,6 +21,7 @@ $.ajax({
             data[i].link +
             "</p>"
         );
+        window.location = "/"
       }
     });
   });
