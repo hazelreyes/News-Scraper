@@ -1,11 +1,11 @@
-$(document).on("ready", function () {
+
 $.ajax({
   method: "GET",
   url: "/scrape/",
 })
   // With that done, add the note information to the page
   .then(function (data) {
-    // Grab the articles as a json
+//     // Grab the articles as a json
     $.getJSON("/articles", function (data) {
       // For each one
       for (var i = 0; i < data.length; i++) {
@@ -111,4 +111,3 @@ $(document).on("click", "#deletenote", function () {
     },
   });
 });
-})
